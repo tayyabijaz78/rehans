@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    #myButton {
+      background: linear-gradient(to right, #ffda6d, transparent);
+      opacity: 1;
+      transition: opacity 1min;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <button id="myButton">Button</button>
+
+  <script>
+    function decreaseOpacity() {
+      const button = document.getElementById('myButton');
+      button.style.opacity = '0';
+    }
+
+    setTimeout(decreaseOpacity, 60000); // 1 minute (60 seconds * 1000 milliseconds)
+  </script>
+</body>
+
+</html>
